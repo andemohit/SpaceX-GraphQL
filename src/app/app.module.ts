@@ -11,6 +11,8 @@ import { LaunchDetailsComponent } from './launch-details/launch-details.componen
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
