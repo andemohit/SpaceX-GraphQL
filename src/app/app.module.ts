@@ -12,12 +12,14 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MatCardModule } from '@angular/material/card';
+import { RelativeTimePipe } from './relative-time/relative-time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LaunchListComponent,
-    LaunchDetailsComponent
+    LaunchDetailsComponent,
+    RelativeTimePipe
   ],
   imports: [
     BrowserModule,
